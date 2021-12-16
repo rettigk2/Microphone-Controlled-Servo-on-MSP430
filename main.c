@@ -72,7 +72,7 @@ void main(void)
         }
     }
 }
-#pragma vector=PORT1_VECTOR //This is always on when a button is connected to my circuit, not sure if hardware or software issue
+#pragma vector=PORT1_VECTOR 
 __interrupt void PORT1_ISR(void)
 {
     P2OUT = 0b00101010; //Turn on all LEDs
